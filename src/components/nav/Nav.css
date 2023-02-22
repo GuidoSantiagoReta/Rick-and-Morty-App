@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background: #913491;
+    padding: 15px;
+    box-shadow: 10px 10px 10px 10px rgb(204, 203, 203);
+    /*#1b6f20 (verde para rick)*/
+}
+
+
+.logo-nav {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+h1 {
+    color: #63cbfb;
+    font-size: 30px;
+   
+}
+
+.punto-title {
+    color: #63cbfb;;
+}
+
+/*MEDIAQUERIES*/
+@media screen and (max-width:400px) {
+    
+    h1 {
+        font-size: 20px;
+    
+    }
+    .logo-nav img{
+      max-width: 15%;
+    }
+    
+    }
