@@ -1,0 +1,7 @@
+.bg-footer {
+    display: flex;
+    flex-direction: column;
+    background: #913491;
+    width: 100%;
+  
+  }

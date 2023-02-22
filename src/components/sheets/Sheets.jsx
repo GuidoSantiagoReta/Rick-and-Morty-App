@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import './Sheets.css'
-const sheets = ({ previoius, next, onPrevious, onNext}) => {
+const sheets = ({ prev, next, onPrevious, onNext }) => {
 
    const handlePrevious = () =>{
     onPrevious();
@@ -16,15 +16,15 @@ const sheets = ({ previoius, next, onPrevious, onNext}) => {
       <ul className="sheets">
          {/* ternario para controlar si la api tiene pagina anterior la muestra */}
         {
-          previoius ?      
-        <Button className="btn" variant="info" onClick={""}>Anterior</Button>
+          prev ?      
+        <Button className="btn" variant="info" onClick={handlePrevious}>Anterior</Button>
           : null
         }
 
         {
           next ?
-        <Button className="btn" variant="info" onClick={""}>Siguiente</Button>
-         :null
+        <Button className="btn" variant="info" onClick={handleNext}>Siguiente</Button>
+         : null
         }
       </ul>
     </div>
