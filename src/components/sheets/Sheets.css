@@ -1,9 +1,7 @@
 
-.sheets{
+.sheets {
     display: flex;
     justify-content: center;
-}
-
-.btn{
-    margin: 10px;
+    align-items: center;
+    gap: 10px; 
 }
